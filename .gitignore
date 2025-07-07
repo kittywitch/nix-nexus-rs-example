@@ -1,0 +1,6 @@
+/nexus_example_addon.dll
+/target
+/.cargo
+/.rustup
+/.direnv
+/result
