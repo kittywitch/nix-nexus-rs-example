@@ -14,11 +14,12 @@ craneLib.buildPackage rec {
       pkg-config
   ];
 
-  LD_LIBRARY_PATH="${lib.makeLibraryPath [buildPackages.buildPackages.libgit2]}";
+  # libgit2 stuff is given as an example of how to provide libraries to the build process
+  #LD_LIBRARY_PATH="${lib.makeLibraryPath [buildPackages.buildPackages.libgit2]}";
 
     nativeBuildInputs = [
       buildPackages.stdenv.cc
-      libgit2
+      #libgit2
   ];
 
   doCheck = false;
